@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# script to print holberton school 10 times using until
+
+i=0
+until [ $i = 10 ]
+do
+	echo "Holberto School"
+	i=$(( i+1 ))
+done
