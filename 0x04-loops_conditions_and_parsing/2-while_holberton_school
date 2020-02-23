@@ -3,6 +3,6 @@
 i=0
 while [ $i -le 9 ]
 do
-	echo "holberton school"
+	echo "holberton School"
 	i=$(( i+1 ))
 done
