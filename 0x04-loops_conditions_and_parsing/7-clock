@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# script to make a clock
+
+i=0
+j=0
+while [ $i -le 24 ]
+do
+	echo "Hours: $i"
+	seq 1 59
+	i=$(( i+1 ))
+done
