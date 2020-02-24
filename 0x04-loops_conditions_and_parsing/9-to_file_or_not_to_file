@@ -2,14 +2,14 @@
 # script to checks a files
 
 file=$1
-if test -f "file";then
+if test -f "$file";then
 	echo "holberton file exists"
 	if [ -s file ]; then
 	echo "file not empty"
 	else
 	echo "file is empty"
 	fi
-	if [ -f file ]; then
+	if [ -f "$file" ]; then
 	echo "holberton is a regular file"
 	fi
 else
