@@ -5,9 +5,9 @@ file=$1
 if test -f "$file";then
 	echo "holberton file exists"
 	if [ -s file ]; then
-	echo "file not empty"
+	echo "holbertonschool file is not empty"
 	else
-	echo "file is empty"
+	echo "holbertonschool file is empty"
 	fi
 	if [ -f "$file" ]; then
 	echo "holberton is a regular file"
