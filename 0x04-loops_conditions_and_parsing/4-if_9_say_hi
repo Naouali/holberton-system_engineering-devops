@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# script to print hi if it 9
+
+i=1
+while [ $i -le 9 ]
+do
+	echo "Holberton School"
+	if [ $i = 8 ]; then
+	echo "Hi"
+	fi
+	i=$(( i+1 ))
+done
