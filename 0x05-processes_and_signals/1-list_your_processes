@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 #script to list all the processes
-
-top
+ps aux --sort pid
