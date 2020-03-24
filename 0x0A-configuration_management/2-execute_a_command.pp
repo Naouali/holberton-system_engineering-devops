@@ -2,6 +2,6 @@
 package {'pkill':
 ensure => 'installed',
 }
-exec {'killmenow':
-command =>'pkill',
+exec {'kill':
+command =>'/usr/bin/pkill -f ./killmenow',
 }
