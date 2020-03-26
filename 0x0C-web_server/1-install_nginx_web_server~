@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# installing a nginx web sevrer remotly
+ssh -i ~/.ssh/holberton:/apt-get -y nginx

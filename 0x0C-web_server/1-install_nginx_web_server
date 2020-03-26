@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# installing a nginx web sevrer remotly
+ssh ubuntu@35.227.36.214 -i ~/.ssh/rsa_id:'apt-get install nginx
