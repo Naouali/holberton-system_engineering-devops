@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # installing a nginx web sevrer remotly
-ssh ubuntu@35.227.36.214 -i ~/.ssh/rsa_id:'apt-get install nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw 'Nginx HTTP'
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sudo service nginx start
