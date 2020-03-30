@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#list all ipv4s adresses on local machine
+ip -f inet address | grep 'inet' | cut -d' ' -f6 | cut -f1 -d'/'
