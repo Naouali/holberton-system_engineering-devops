@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# configring load balancer
+sudo apt-get update
+sudo apt-get -y install nginx
+s=$(cat /etc/hostname)
+sudo sed -i "37 i\ \tadd_header X-Served-By $s;\n" /etc/nginx/sites-enabled/default
+sudo service nginx restart
