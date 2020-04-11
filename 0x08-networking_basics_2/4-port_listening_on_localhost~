@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#connecting on local host using telnet
+telnet -open -n localhost 98

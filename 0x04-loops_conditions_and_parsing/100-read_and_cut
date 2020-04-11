@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#read file
+while [ "$1" != 0 ]
+do
+     read -u ("$1")
+done
