@@ -10,6 +10,7 @@ if __name__ == "__main__":
     id = sys.argv[1]
     res = requests.get(
             'https://jsonplaceholder.typicode.com/users/' + id)
+   
     name = res.json()['name']
     data = requests.get(
             'https://jsonplaceholder.typicode.com/users/'+id+'/todos')
