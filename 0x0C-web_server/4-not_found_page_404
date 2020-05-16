@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#c create a costum not found page
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo chown -R ubuntu:ubuntu /var/www
+sudo touch /var/www/html/404.html
+sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
+file="/etc/nginx/sites-available/default"
+sudo sed -i "63i \\\n\terror_page 404 /404.html;\n" $file
+sudo service nginx restart
