@@ -17,13 +17,13 @@ if __name__ == "__main__":
     data = requests.get(
             'https://jsonplaceholder.typicode.com/users/'+id+'/todos')
     f = (id + '.csv')
-    l = []
+    mylist = []
     with open(f, "w") as csv_file:
         writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
         for task in data.json():
-            l.append(id)
-            l.append(name)
-            l.append(task['completed'])
-            l.append(task['title'])
-            writer.writerow(l)
-            l.clear()
+            mylist.append(id)
+            mylist.append(name)
+            mylist.append(task['completed'])
+            mylist.append(task['title'])
+            writer.writerow(mylist)
+            mylist.clear()
