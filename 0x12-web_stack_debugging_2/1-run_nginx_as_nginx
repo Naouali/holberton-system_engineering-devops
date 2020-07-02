@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #ngnix config
-new_config="user nginx"
-sudo sed -i "1i $new_config" /etc/nginx/nginx.conf
+new_con="user nginx"
+sudo sed -i "2i $new_con" /etc/nginx/nginx.conf
+sudo nginx -c 'service nginx strat'
