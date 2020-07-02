@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #ngnix config
 new_config="user nginx"
-sed -i "1i $new_config" /etc/nginx/nginx.conf
+sudo sed -i "1i $new_config" /etc/nginx/nginx.conf
